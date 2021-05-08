@@ -1,0 +1,6 @@
+@import url('../blocks/body/body.css');
+@import url('../blocks/form/form.css');
+@import url('../blocks/form/__title/form__title.css');
+@import url('../blocks/form/__label/form__label.css');
+@import url('../blocks/form/__input/form__input.css');
+@import url('../blocks/form/__submit-button/form__submit-button.css');

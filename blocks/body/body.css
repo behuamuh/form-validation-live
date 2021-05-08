@@ -1,0 +1,7 @@
+.body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  min-height: 100vh;
+}
