@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+  <!-- ^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}$ -->
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Login Page </title>
@@ -8,17 +8,28 @@
 </head>
 
 <body class="body">
-  <form class="form">
+  <form class="form" name="login" novalidate>
     <legend class="form__title">Login Form</legend>
     <label class="form__label">Username : </label>
-    <input class="form__input" type="text" placeholder="Enter Username" name="username" required>
+    <input id="username" minlength="3" class="form__input" type="text" placeholder="Enter Username" name="username" required>
+    <span class="form__input-error" id="username-error"></span>
     <label class="form__label">Password : </label>
-    <input class="form__input" type="password" placeholder="Enter Password" name="password" required>
-    <label class="form__label">
-      <input type="checkbox" checked="checked"> Remember me
-    </label>
+    <input id="password" class="form__input" type="password" placeholder="Enter Password" name="password" required>
+    <span class="form__input-error" id="password-error"></span>
     <button class="form__submit-button" type="submit">Login</button>
   </form>
+  <form class="form" name="reset" novalidate>
+    <legend class="form__title">Reset Password Form</legend>
+    <label class="form__label">New password : </label>
+    <input id="new-password" class="form__input" type="password" placeholder="Enter Password" name="password" required>
+    <span class="form__input-error" id="new-password-error"></span>
+    <label class="form__label">Confirm password : </label>
+    <input id="new-password-confirm" class="form__input" type="password" placeholder="Enter Password" name="password" required>
+    <span class="form__input-error" id="new-password-confirm-error"></span>
+    <button class="form__submit-button" type="submit">Reset</button>
+  </form>
+  <script src="./scripts/validate.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

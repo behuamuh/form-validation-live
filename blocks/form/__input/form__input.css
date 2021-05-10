@@ -5,4 +5,5 @@
   display: inline-block;
   border: 2px solid green;
   box-sizing: border-box;
+  outline: none;
 }

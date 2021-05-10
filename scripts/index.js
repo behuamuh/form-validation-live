@@ -1,1 +1,1 @@
-console.log('start work');
+enableValidation();

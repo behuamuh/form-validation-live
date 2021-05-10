@@ -11,3 +11,8 @@
 .form__submit-button:hover {
   opacity: 0.7;
 }
+
+.form__submit-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
