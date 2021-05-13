@@ -11,10 +11,10 @@
   <form class="form" name="login" novalidate>
     <legend class="form__title">Login Form</legend>
     <label class="form__label">Username : </label>
-    <input id="username" minlength="3" class="form__input" type="text" placeholder="Enter Username" name="username" required>
+    <input id="username" maxlength="12" minlength="3" class="form__input" type="text" placeholder="Enter Username" name="username" required>
     <span class="form__input-error" id="username-error"></span>
     <label class="form__label">Password : </label>
-    <input id="password" class="form__input" type="password" placeholder="Enter Password" name="password" required>
+    <input pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{6,}$" id="password" class="form__input" type="password" placeholder="Enter Password" name="password" required>
     <span class="form__input-error" id="password-error"></span>
     <button class="form__submit-button" type="submit">Login</button>
   </form>
